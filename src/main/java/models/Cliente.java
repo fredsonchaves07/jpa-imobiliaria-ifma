@@ -3,29 +3,16 @@ import javax.persistence.*;
 import java.util.*;
 
 @Entity
-public class Clientes {
+public class Cliente {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @Column(nullable = false)
     private String name;
-
-    @Column(unique = true)
     private String cpf;
-
-    @Column(unique = true)
     private String email;
-
-    @Column()
     private Date dataNascimento;
-
-    @Column()
     private String telefone1;
-
-    @Column()
     private String telefone2;
-
     public Integer getId() {
         return id;
     }
@@ -85,13 +72,26 @@ public class Clientes {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Clientes)) return false;
-        Clientes clientes = (Clientes) o;
-        return Objects.equals(getId(), clientes.getId()) && Objects.equals(getName(), clientes.getName()) && Objects.equals(getCpf(), clientes.getCpf()) && Objects.equals(getEmail(), clientes.getEmail()) && Objects.equals(getDataNascimento(), clientes.getDataNascimento()) && Objects.equals(getTelefone1(), clientes.getTelefone1()) && Objects.equals(getTelefone2(), clientes.getTelefone2());
+        if (!(o instanceof Cliente)) return false;
+        Cliente cliente = (Cliente) o;
+        return Objects.equals(getId(), cliente.getId()) && Objects.equals(getName(), cliente.getName()) && Objects.equals(getCpf(), cliente.getCpf()) && Objects.equals(getEmail(), cliente.getEmail()) && Objects.equals(getDataNascimento(), cliente.getDataNascimento()) && Objects.equals(getTelefone1(), cliente.getTelefone1()) && Objects.equals(getTelefone2(), cliente.getTelefone2());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getName(), getCpf(), getEmail(), getDataNascimento(), getTelefone1(), getTelefone2());
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", telefone1='" + telefone1 + '\'' +
+                ", telefone2='" + telefone2 + '\'' +
+                '}';
     }
 }
