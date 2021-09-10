@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: repository.test.AlugueisTestTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.007 sec <<< FAILURE!
+testNovoAluguel(repository.test.AlugueisTestTest)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: org.junit.<error>
+	at repository.test.AlugueisTest.novoAluguel(AlugueisTest.java:26)
+	at repository.test.AlugueisTestTest.testNovoAluguel(AlugueisTestTest.java:36)
+
+testListAlugueis(repository.test.AlugueisTestTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at repository.test.AlugueisTest.listAlugueis(AlugueisTest.java:33)
+	at repository.test.AlugueisTestTest.testListAlugueis(AlugueisTestTest.java:47)
+
+testPesIdInquilino(repository.test.AlugueisTestTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at repository.test.AlugueisTest.pesIdInquilino(AlugueisTest.java:38)
+	at repository.test.AlugueisTestTest.testPesIdInquilino(AlugueisTestTest.java:58)
+
