@@ -24,11 +24,11 @@ public class RelatorioService implements Serializable {
     private File arquivoGerado = null;
 
     public String gerarRelatorio(HashMap<String, Object> paramsRelatorio,String nomeRelatorioJasper,String tipoExportar) throws JRException{
-        String caminhoRelatorio = "/home/fredsonchaves07/IdeaProjects/sistema-imobiliario/src/main/resources/reports/";
+        String caminhoRelatorio = "src/main/resources/reports/";
 
-        String caminhoArquivosJasper = "/home/fredsonchaves07/IdeaProjects/sistema-imobiliario/src/main/resources/reports/jasper_A4.jasper";
+        String caminhoArquivosJasper = "src/main/resources/reports/jasper_A4.jrxml";
 
-        JasperReport relatorioJasper = (JasperReport) JRLoader.loadObjectFromFile(caminhoArquivosJasper);
+        JasperReport relatorioJasper = JasperCompileManager.compileReport(caminhoArquivosJasper);
 
         JasperPrint impressoraJasper = JasperFillManager.fillReport(relatorioJasper, paramsRelatorio,ConnetionFactory.getConnection());
 

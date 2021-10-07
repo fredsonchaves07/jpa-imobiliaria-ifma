@@ -89,7 +89,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <plugin>
+<!--    <plugin>
         <groupId>org.bsc.maven</groupId>
         <artifactId>maven-processor-plugin</artifactId>
         <version>4.5</version>
@@ -101,7 +101,7 @@
                 </goals>
                 <phase>generate-sources</phase>
                 <configuration>
-                    <!-- source output directory -->
+                     source output directory 
                     <outputDirectory>target/metamodel</outputDirectory>
                 </configuration>
             </execution>
@@ -124,5 +124,5 @@
                 </configuration>
             </execution>
         </executions>
-    </plugin>
+    </plugin>-->
 </project>
