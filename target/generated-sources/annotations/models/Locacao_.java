@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import models.Cliente;
 import models.Imovel;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2021-09-10T18:34:44", comments="EclipseLink-2.7.7.v20200504-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2021-10-06T22:59:56", comments="EclipseLink-2.7.7.v20200504-rNA")
 @StaticMetamodel(Locacao.class)
 public class Locacao_ { 
 

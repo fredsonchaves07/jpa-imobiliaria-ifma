@@ -15,13 +15,13 @@ public class LocacaoRepository {
         this.daoGeneric = new DAOGeneric<Locacao>(manager);
     }
 
-    public Locacao createUpdate(Locacao aluguel) {
-        return daoGeneric.createUpdate(aluguel);
+    public Locacao createUpdate(Locacao aluguel1) {
+        return daoGeneric.createUpdate(aluguel1);
     }
 
     public List<Locacao> locacoes() {
         return manager
-                .createQuery("from Aluguel a ", Locacao.class)
+                .createQuery("from Locacao a ", Locacao.class)
                 .getResultList();
     }
 

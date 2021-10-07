@@ -3,11 +3,12 @@ import javax.persistence.*;
 import java.util.*;
 
 @Entity
+@Table(name="cliente")
 public class Cliente {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String nomeCliente;
     private String cpf;
     private String email;
     private Date dataNascimento;
@@ -22,7 +23,7 @@ public class Cliente {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nomeCliente = name;
     }
 
     public void setTelefone1(String telefone1) {
@@ -42,7 +43,7 @@ public class Cliente {
     }
 
     public String getName() {
-        return name;
+        return nomeCliente;
     }
 
     public String getTelefone1() {
@@ -86,7 +87,7 @@ public class Cliente {
     public String toString() {
         return "Cliente{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + nomeCliente + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", email='" + email + '\'' +
                 ", dataNascimento=" + dataNascimento +

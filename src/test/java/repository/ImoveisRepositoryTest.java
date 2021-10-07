@@ -32,7 +32,7 @@ public class ImoveisRepositoryTest {
 
     @BeforeClass
     public static void ini() {
-        factory = Persistence.createEntityManagerFactory("sitema-imob");
+        factory = Persistence.createEntityManagerFactory("corretora");
     }
 
     @Before

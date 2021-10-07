@@ -33,7 +33,7 @@ public class AlugueisRepositoryTest {
 
     @BeforeClass
     public static void ini() {
-        factory = Persistence.createEntityManagerFactory("mob");
+        factory = Persistence.createEntityManagerFactory("corretora");
     }
 
     @Before

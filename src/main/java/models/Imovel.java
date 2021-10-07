@@ -3,6 +3,7 @@ package models;
 import javax.persistence.*;
 
 @Entity
+@Table(name="imovel")
 public class Imovel implements BaseEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

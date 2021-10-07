@@ -9,12 +9,12 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
 import models.Cliente;
 import models.Locacao;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
@@ -32,7 +32,7 @@ public class LocacaoRepositoryTest {
     
     @BeforeClass
     public static void ini() {
-        factory = Persistence.createEntityManagerFactory("sitema-imob");
+        factory = Persistence.createEntityManagerFactory("corretora");
     }
 
     @Before
@@ -72,7 +72,7 @@ public class LocacaoRepositoryTest {
     @Test
     public void testDeletePorId() {
         Locacao locacao = new Locacao();
-         locacaoRepository.deletePorId(locacao.getId());
+         locacaoRepository.deletePorId(10);
     }
 
     @Test
