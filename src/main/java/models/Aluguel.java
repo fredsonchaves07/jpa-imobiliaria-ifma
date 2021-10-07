@@ -8,7 +8,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class Aluguel implements BaseEntity {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Date dataVencimento;
     private Double valorPago;

@@ -5,18 +5,20 @@
              version="2.1">
 
 
-    <persistence-unit name="sitema-imob" transaction-type="RESOURCE_LOCAL">
+
+    <persistence-unit name="mob" transaction-type="RESOURCE_LOCAL">
 
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
 
         <properties>
             <!-- Configuring JDBC properties -->
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost/sistema-imob?useSSL=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true"/>
-            <property name="javax.persistence.jdbc.user" value="root" />
-            <property name="javax.persistence.jdbc.password" value="" />
+                      value="jdbc:mysql://localhost/mob?useSSL=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true"/>
+            <property name="javax.persistence.jdbc.user" value="fred" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+
 
 
 
@@ -40,9 +42,9 @@
         <properties>
             <!-- Configuring JDBC properties -->
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost/estoque_test?useSSL=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true"/>
-            <property name="javax.persistence.jdbc.user" value="root" />
-            <property name="javax.persistence.jdbc.password" value="" />
+                      value="jdbc:mysql://localhost/mob?useSSL=false&amp;serverTimezone=UTC&amp;createDatabaseIfNotExist=true"/>
+            <property name="javax.persistence.jdbc.user" value="fred" />
+            <property name="javax.persistence.jdbc.password" value="1234" />
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 
 

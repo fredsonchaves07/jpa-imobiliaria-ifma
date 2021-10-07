@@ -33,7 +33,7 @@ public class AlugueisRepositoryTest {
 
     @BeforeClass
     public static void ini() {
-        factory = Persistence.createEntityManagerFactory("sitema-imob");
+        factory = Persistence.createEntityManagerFactory("mob");
     }
 
     @Before
@@ -73,6 +73,7 @@ public class AlugueisRepositoryTest {
     @Test
     public void testRemove() {
         Aluguel aluguel = new Aluguel();
+
         alugueisRepository.remove(aluguel.getId());
     }
 
